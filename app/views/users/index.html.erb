@@ -3,7 +3,7 @@
 <div class="container">
   <h1>Users</h1>
   <ul>
-    <%= @users.each do |f| %>
+    <% @users.each do |f| %>
     <li><%= f.name %></li>
     <li><%= f.email %></li>
     <% end %>
