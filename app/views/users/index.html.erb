@@ -1,0 +1,10 @@
+<%= provide(:title, 'Users') %>
+
+<div class="container">
+
+  <ul>
+    <% @users.each do |f| %>
+    <li><%= link_to f.name, user_path(f.id) %></li>
+    <% end %>
+  </ul>    
+</div>
