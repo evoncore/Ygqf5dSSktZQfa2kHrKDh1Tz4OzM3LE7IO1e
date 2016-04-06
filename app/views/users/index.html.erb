@@ -4,7 +4,7 @@
 
   <ul>
     <% @users.each do |f| %>
-    <li><%= link_to f.name, user_path(f.id) %></li>
+    <li><%= link_to f.name, user_path %></li>
     <% end %>
   </ul>    
 </div>
