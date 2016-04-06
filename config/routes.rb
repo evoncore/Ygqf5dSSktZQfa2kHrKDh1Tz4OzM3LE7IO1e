@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   match '/contact', to: 'static_pages#contact', via: 'get'
 
+  match '/news', to: 'static_pages#news',       via: 'get'
+
   # Users
 
   resources :users
