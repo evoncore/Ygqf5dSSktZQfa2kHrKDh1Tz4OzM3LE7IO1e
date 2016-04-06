@@ -2,10 +2,13 @@
 
 <div class="container">
   <h1>Users</h1>
-  <ul>
+  <table>
     <% @users.each do |f| %>
-    <li><%= f.name %></li>
-    <li><%= f.email %></li>
+    <tr>
+      <td><%= f.id %></td>
+      <td><%= f.name %></td>
+      <td><%= f.email %></td>
+    </tr>
     <% end %>
-  </ul>    
+  </table>
 </div>
