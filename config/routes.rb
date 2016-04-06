@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   match '/sign_up', to: 'users#new',            via: 'get'
 
+  match '/users', to: 'users#index',            via: 'get'
+
   # Sessions
 
   resources :sessions, only: [:new, :create, :destroy]
