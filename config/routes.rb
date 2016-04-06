@@ -17,7 +17,6 @@ Rails.application.routes.draw do
   resources :users
 
   match '/sign_up', to: 'users#new',            via: 'get'
-
   match '/users', to: 'users#index',            via: 'get'
 
   # Sessions
